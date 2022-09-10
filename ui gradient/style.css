@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top left,#02fbc5, #f265ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 200% 400%;
+    animation: gradient 7s infinite alternate;
+}
+
+h1{
+    color: #fff;
+}
+
+
+@keyframes gradient{
+    0%{
+        background-position: 0%;
+    }
+    50%{
+        background-position: 50%;
+    }
+    75%{
+        background-position: 75%;
+    }
+    100%{
+        background-position: 0%;
+    }
+}

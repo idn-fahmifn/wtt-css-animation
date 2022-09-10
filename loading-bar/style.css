@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: #08c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bar-loading{
+    display: flex;
+    flex-direction: row;
+}
+.bar1{
+    width: 10px;
+    height: 50px;
+    background: #ffff;
+    margin: 5px;
+    animation: bar-loading 0.5s infinite alternate;
+    animation-delay: 0.5s;
+}
+.bar2{
+    width: 10px;
+    height: 50px;
+    background: #ffff;
+    margin: 5px;
+    animation: bar-loading 0.5s infinite alternate;
+    animation-delay: 0.6s;
+
+}
+.bar3{
+    width: 10px;
+    height: 50px;
+    background: #ffff;
+    margin: 5px;
+    animation: bar-loading 0.5s infinite alternate;
+    animation-delay: 0.7s;
+}
+.bar4{
+    width: 10px;
+    height: 50px;
+    background: #ffff;
+    margin: 5px;
+    animation: bar-loading 0.5s infinite alternate;
+    animation-delay: 0.8s;
+}
+.text-loading{
+    color: #fff;
+    margin-top: 20px;
+}
+
+@keyframes bar-loading {
+    from{
+        transform: scaleY(0.2);
+    }
+    to{
+        transform: scaleY(1.3);
+    }
+}

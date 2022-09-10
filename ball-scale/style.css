@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: #08c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.ball{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: #ffae00;
+    margin: 60px;
+    animation: ball-scale 0.6s ease-in-out infinite alternate;
+}
+.text-loading{
+    color: #fff;
+    margin-top: 20px;
+}
+
+@keyframes ball-scale {
+    from{
+        transform: scale(0.2);
+    }
+    to{
+        transform: scale(3);
+    }
+}
